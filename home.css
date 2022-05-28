@@ -81,7 +81,7 @@ nav .bg {
 .links {
     position: relative;
     z-index: 2;
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
 }
@@ -119,6 +119,7 @@ nav a {
 }
 #info {
     position: relative;
+    padding: 10px;
 }
 .box {
     width: calc((100% / 3) - 225px);
@@ -137,6 +138,8 @@ nav a {
     line-height: 25px;
     text-transform: lowercase;
     letter-spacing: -5px;
+    color: #ccc;
+    text-shadow: -1px -1px #fff, 0px 0px 3px #bbb;
 }
 .clear {
     clear: both;
@@ -147,3 +150,32 @@ nav a {
     padding: 100px;
     margin: 50px 0px 0px;
 }
+
+/* screen size compatibility */
+
+@media only screen and (max-width: 850px) {
+#title {
+    font-size: 200px;
+    letter-spacing: -25px;
+    bottom: 55px;
+}
+nav a {
+    padding: 20px 20px;
+}
+.first {
+    font-size: 35px;
+    letter-spacing: -2px;
+    float: left!important;
+    width: 10%!important;
+    padding: 0px;
+}
+.left, .right {
+    padding: 20px 10px;
+}
+.box {
+    width: 65%;
+    float: right;
+    margin-bottom: 20px;
+}
+}
+
