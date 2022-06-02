@@ -101,14 +101,15 @@ nav a {
     position: absolute;
     bottom: 165px;
     right: 50px;
-    font-size: 500px;
+    font-size: 350px;
     line-height: 250px;
-    letter-spacing: -70px;
+    letter-spacing: -50px;
     /*
     color: #95746b;
     text-shadow: 3px 3px #4d2d1e, 0px 0px 3px #9a9a9a;
     */
     color: #fff;
+    -webkit-filter: blur(1px);
     opacity: .5;
     text-shadow: 0.5px 0.5px 1px rgb(255 255 255 / 50%), -0.5px -0.5px 1px #000, 0px 0px 3px #9da1a4;
 }
